@@ -1,12 +1,12 @@
-package ioto.cmp.service.sims;
+package ioto.cmp.service.sms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SimServiceApplication {
+public class SmsServiceApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SimServiceApplication.class, args);
+        SpringApplication.run(SmsServiceApplication.class, args);
     }
 
 

@@ -1,0 +1,11 @@
+# curl -X GET http://localhost:9006/actuator/health
+GET http://localhost:9006/actuator/health
+
+###
+
+# curl -X POST "http://localhost:9005/sms/send?to=1234567890&text=Hello%20SMPP"
+POST http://localhost:9005/sms/send?to=1234567890&text=Hello%20SMPP
+
+###
+
+

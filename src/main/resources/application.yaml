@@ -26,16 +26,18 @@ ioto:
     service:
       sms:
         smpp:
-          host: smpp.server.com
+          host: 127.0.0.1
           port: 2775
-          system-id: mySystemId
-          password: myPassword
+          system-id: smppclient1
+          password: password
           system-type: cp
+          service-type: CMT
           reconnect-delay-ms: 5000
-          source-ton: 1
-          source-npi: 1
-          dest-ton: 1
-          dest-npi: 1
+          source-number: ioto
+          source-ton: INTERNATIONAL
+          source-npi: ISDN
+          dest-ton: INTERNATIONAL
+          dest-npi: ISDN
 
 
 
