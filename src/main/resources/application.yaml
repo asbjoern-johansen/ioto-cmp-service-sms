@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: iot-cmp-services-sms
+  main:
+    banner-mode: "off"
+  profiles:
+    active: "default"
+
+server:
+  port: 9005
+
+#Actuator
+management:
+  server:
+    port: 9006  # different port for actuator check
+  endpoints:
+    web:
+      exposure:
+        include: health,info   # only exposes these endpoints
+  endpoint:
+    health:
+      show-details: always
+
+ioto:
+  cmp:
+    service:
+      sms:
+        smpp:
+          host: smpp.server.com
+          port: 2775
+          system-id: mySystemId
+          password: myPassword
+          system-type: cp
+          reconnect-delay-ms: 5000
+          source-ton: 1
+          source-npi: 1
+          dest-ton: 1
+          dest-npi: 1
+
+
+
+
+
