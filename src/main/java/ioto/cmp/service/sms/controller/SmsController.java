@@ -24,4 +24,9 @@ public class SmsController {
         List<String> messageIds = smppService.sendSms(to, text);
         return ResponseEntity.ok(String.join(",", messageIds));
     }
+
+    @GetMapping("/ping")
+    public ResponseEntity<String> ping() {
+        return ResponseEntity.ok("pong");
+    }
 }

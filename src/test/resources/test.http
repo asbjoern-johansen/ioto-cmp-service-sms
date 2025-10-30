@@ -1,11 +1,37 @@
-# curl -X GET http://localhost:9006/actuator/health
-GET http://localhost:9006/actuator/health
+# curl -X GET http://localhost:9007/actuator/health
+GET http://localhost:9007/actuator/beans
+
+mappings
+###
+
+# curl -X GET http://localhost:9007/actuator/mappings
+GET http://localhost:9007/actuator/mappings
 
 ###
 
-# curl -X POST "http://localhost:9005/sms/send?to=1234567890&text=Hello%20SMPP"
-POST http://localhost:9005/sms/send?to=1234567890&text=Hello%20SMPP
+
+# curl -X GET http://localhost:9007/actuator/health
+GET http://localhost:9007/actuator/health
 
 ###
+
+# curl -X POST "http://localhost:9006/sms/send?to=1234567890&text=Hello%20SMPP"
+POST http://localhost:9006/sms/send?to=1234567890&text=Hello%20SMPP
+
+###
+
+# curl -X POST "http://service-sms:9006/sms/send?to=1234567890&text=Hello%20SMPP"
+POST http://service-sms:9006/sms/send?to=1234567890&text=Hello%20SMPP
+
+###
+
+# curl -X GET "http://localhost:9006/sms/ping"
+GET http://localhost:9006/sms/ping
+
+###
+
+
+
+
 
 

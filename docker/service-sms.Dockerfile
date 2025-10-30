@@ -12,7 +12,7 @@ COPY build/libs/${APP_NAME}-${APP_VERSION}.jar /service/ioto-cmp-service-sms.jar
 COPY src/main/resources/application-docker.yaml /service/application.yaml
 
 WORKDIR /service
-ENTRYPOINT ["java","-Dspring.config.location=/service/application.yaml", "-jar", "/service/ioto-cmp-service-sims.jar"]
+ENTRYPOINT ["java","-Dspring.config.location=/service/application.yaml", "-jar", "/service/ioto-cmp-service-sms.jar"]
 
 EXPOSE 9006 9007
 
